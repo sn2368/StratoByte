@@ -1,5 +1,5 @@
 body{
-  background:black;
+  background: linear-gradient(to right, #000, #434343);
 }
 .hero {
   background: linear-gradient(to right, #000, #434343);
