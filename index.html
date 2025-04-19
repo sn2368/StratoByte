@@ -40,12 +40,17 @@
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('show');
+      } else {
+        entry.target.classList.remove('show'); // this makes it repeat
       }
     });
+  }, {
+    threshold: 0.3 // adjust to trigger slightly later (0 = very early, 1 = only when fully visible)
   });
 
   const hiddenElements = document.querySelectorAll('.hidden');
   hiddenElements.forEach(el => observer.observe(el));
 </script>
+
 </body>
 </html>
