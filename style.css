@@ -23,7 +23,7 @@ body{
   margin-bottom: 2rem;
 }
 
-/* SECTION BASE */
+
 #data-dilemma {
   padding: 100px 20px;
   background: linear-gradient(to bottom, #111111, #000000); /* dark theme gradient */
@@ -31,7 +31,7 @@ body{
   text-align: center;
 }
 
-/* TITLES */
+
 .section-title {
   font-size: 2.5rem;
   margin-bottom: 10px;
@@ -47,7 +47,7 @@ body{
   margin-right: auto;
 }
 
-/* PROBLEM CARDS */
+
 .problem-cards {
   display: flex;
   flex-wrap: wrap;
