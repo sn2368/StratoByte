@@ -23,17 +23,54 @@ body{
   margin-bottom: 2rem;
 }
 
-.btn {
-  background: #000000;
-  color: #FFDEDE;
-  padding: 10px 20px;
-  font-size: 1.2rem;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: 0.3s ease-in-out;
+/* SECTION BASE */
+#data-dilemma {
+  padding: 100px 20px;
+  background: linear-gradient(to bottom, #111111, #000000); /* dark theme gradient */
+  color: white;
+  text-align: center;
 }
 
-.btn:hover {
-  background-color: #CF0F47;  
-  box-shadow: 0 0 20px #CF0F47, 0 0 30px #CF0F47, 0 0 40px #CF0F47;
+/* TITLES */
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #cccccc;
+  margin-bottom: 50px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* PROBLEM CARDS */
+.problem-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.problem-card {
+  background-color: #1a1a1a;
+  border-radius: 20px;
+  padding: 30px 20px;
+  width: 280px;
+  box-shadow: 0 0 10px rgba(207, 15, 71, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.problem-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(207, 15, 71, 0.6);
+}
+
+.problem-card .icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  display: block;
 }
