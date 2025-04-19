@@ -41,11 +41,11 @@
       if (entry.isIntersecting) {
         entry.target.classList.add('show');
       } else {
-        entry.target.classList.remove('show'); // this makes it repeat
+        entry.target.classList.remove('show'); 
       }
     });
   }, {
-    threshold: 0.3 // adjust to trigger slightly later (0 = very early, 1 = only when fully visible)
+    threshold: 0.3 
   });
 
   const hiddenElements = document.querySelectorAll('.hidden');
