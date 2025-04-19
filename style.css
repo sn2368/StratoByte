@@ -4,7 +4,7 @@ body{
 .hero {
   background: linear-gradient(to right, #000, #434343);
   color: #fff;
-  height: 100vh; /* full viewport height */
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,10 +13,9 @@ body{
 }
 
 .hero h1 {
-  font-size: 4rem; /* large title */
+  font-size: 4rem;
   font-weight: bold;
   margin-bottom: 1rem;
-  text-transform: uppercase;
 }
 
 .hero p {
