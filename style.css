@@ -1,5 +1,8 @@
+body{
+  background:black;
+}
 .hero {
-  background: linear-gradient(to bottom, #0f0f0f, #1a1a1a); /* dark gradient */
+  background: linear-gradient(to right, #000, #434343);
   color: #fff;
   height: 100vh; /* full viewport height */
   display: flex;
