@@ -22,8 +22,8 @@
 }
 
 .btn {
-  background: #00d9ff; /* cyan glow */
-  color: #fff;
+  background: #000000;
+  color: #FFDEDE;
   padding: 10px 20px;
   font-size: 1.2rem;
   text-decoration: none;
@@ -32,5 +32,5 @@
 }
 
 .btn:hover {
-  background: #008ecc;
+  background: #CF0F47;
 }
