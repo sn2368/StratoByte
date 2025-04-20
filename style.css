@@ -77,25 +77,6 @@ nav {
   left: 0;
 }
 
-/* Hamburger menu styles */
-.hamburger-menu {
-  display: none;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  width: 30px;
-  height: 25px;
-  cursor: pointer;
-}
-
-.hamburger-menu .bar {
-  width: 25px;
-  height: 4px;
-  background-color: #FFDEDE;
-  transition: all 0.3s ease;
-}
-
-/* Responsive Design for Mobile */
 @media screen and (max-width: 768px) {
   .navbar-links {
     position: absolute;
@@ -121,49 +102,6 @@ nav {
   .navbar-links a {
     font-size: 1.2rem;
     color: #FFDEDE;
-  }
-}
-
-/* Animation for Hamburger Menu */
-.hamburger-menu.active .bar:nth-child(1) {
-  transform: rotate(45deg);
-  position: relative;
-  top: 10px;
-}
-
-.hamburger-menu.active .bar:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger-menu.active .bar:nth-child(3) {
-  transform: rotate(-45deg);
-  position: relative;
-  top: -10px;
-}
-.menu-toggle {
-  display: none;
-  font-size: 2rem;
-  color: #fff;
-  cursor: pointer;
-}
-
-@media (max-width: 770px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background: #000;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-  }
-
-  .nav-links.active {
-    display: flex;
   }
 }
 
@@ -215,18 +153,18 @@ nav {
 }
 
 .cloud4 {
-  right: -300px; /* Start from the right */
+  right: -100px; /* Start from the right */
   animation: moveCloudRightToLeft 30s linear infinite;
 }
 
 .cloud5 {
-  right: -500px; /* Start from the right */
+  right: -150px; /* Start from the right */
   animation: moveCloudRightToLeft 35s linear infinite;
   animation-delay: 5s; /* Slight delay */
 }
 
 .cloud6 {
-  right: -400px; /* Start from the right */
+  right: -50px; /* Start from the right */
   animation: moveCloudRightToLeft 40s linear infinite;
   animation-delay: 10s; /* Slight delay */
 }
