@@ -1,5 +1,6 @@
 body{
   background: linear-gradient(to right, #000, #434343);
+  overflow-x:hidden;
 }
 .hero {
   background: linear-gradient(to right, #000, #434343);
