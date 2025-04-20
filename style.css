@@ -2,7 +2,17 @@ body{
   background: linear-gradient(to right, #000, #434343);
   overflow-x:hidden;
 }
-/* Navbar Styling */
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #000; /* or your gradient */
+  z-index: 1000;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -129,6 +139,33 @@ body{
   position: relative;
   top: -10px;
 }
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 770px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #000;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
 .hero {
   background: linear-gradient(to right, #000, #434343);
   color: #fff;
