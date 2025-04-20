@@ -258,3 +258,77 @@ nav {
   opacity: 1;
   transform: translateY(0);
 }
+
+.solution {
+  background: linear-gradient(to bottom, #1c1c1c, #0a0a0a);
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.solution-heading h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.solution-heading p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.pods-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.pod {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid #CF0F47;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 30px rgba(207, 15, 71, 0.4);
+  backdrop-filter: blur(8px);
+  animation: floatUp 1s ease forwards;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.pod h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #FFDEDE;
+}
+
+.pod p {
+  font-size: 1rem;
+  color: #ddd;
+}
+@keyframes floatUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes gentleFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.pod.visible {
+  animation: floatUp 1s ease forwards, gentleFloat 4s ease-in-out infinite;
+}
