@@ -11,13 +11,14 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100vw;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  
   background-color: #000;
   position: sticky;
   top: 0;
@@ -254,6 +255,7 @@ nav {
   background: linear-gradient(to bottom, #111111, #000000); /* dark theme gradient */
   color: white;
   text-align: center;
+  width: 100vw;
 }
 
 
