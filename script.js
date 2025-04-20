@@ -14,11 +14,17 @@ const observer = new IntersectionObserver((entries) => {
   const hiddenElements = document.querySelectorAll('.hidden');
   hiddenElements.forEach(el => observer.observe(el));
 
-//navbar
-const hamburgerMenu = document.getElementById('hamburger-menu');
-const navbarLinks = document.getElementById('navbar-links');
+const pods = document.querySelectorAll('.pod');
 
-hamburgerMenu.addEventListener('click', () => {
-  navbarLinks.classList.toggle('active');
-  hamburgerMenu.classList.toggle('active');
-});
+function revealPods() {
+  pods.forEach(pod => {
+    const rect = pod.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {
+      pod.classList.add('visible');
+    } else {
+      pod.classList.remove('visible'); // to make it repeat
+    }
+  });
+}
+
+window.addEventListener('scroll', revealPods);
