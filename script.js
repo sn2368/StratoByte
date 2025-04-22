@@ -28,3 +28,9 @@ function revealPods() {
 }
 
 window.addEventListener('scroll', revealPods);
+
+
+
+document.getElementById("navbar-toggle").addEventListener("click", function () {
+  document.getElementById("navbar-links").classList.toggle("show");
+});
