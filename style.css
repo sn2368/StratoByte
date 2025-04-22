@@ -1,5 +1,5 @@
 body{
-  background: linear-gradient(to right, #000, #434343);
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   overflow-x:hidden;
 }
 nav {
@@ -94,10 +94,6 @@ nav {
     display: flex;
   }
 
-  .hamburger-menu {
-    display: flex;
-  }
-
   .navbar-links a {
     font-size: 1.2rem;
     color: #FFDEDE;
@@ -105,7 +101,7 @@ nav {
 }
 
 .hero {
-  background: linear-gradient(to right, #000, #434343);
+background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   color: #fff;
   height: 100vh;
   display: flex;
@@ -260,7 +256,7 @@ nav {
 }
 
 .solution {
-  background: linear-gradient(to bottom, #1c1c1c, #0a0a0a);
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   color: #fff;
   padding: 100px 20px;
   text-align: center;
