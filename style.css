@@ -203,10 +203,14 @@ background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
+  backdrop-filter: blur(17px) saturate(200%);
+  -webkit-backdrop-filter: blur(17px) saturate(200%);
+  background-color: rgba(255, 255, 255, 0.20);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
 }
 
 .problem-card {
-  background-color: #1a1a1a;
   border-radius: 20px;
   padding: 30px 20px;
   width: 280px;
