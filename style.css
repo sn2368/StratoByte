@@ -3,43 +3,22 @@ body{
   overflow-x:hidden;
 }
 
-/* Navbar Container */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: rgba(0, 56, 95, 0.9); /* translucent deep blue */
+  background: linear-gradient(to right, #1e3c72, #2a5298); /* updated gradient */
   position: sticky;
   top: 0;
   z-index: 1000;
   backdrop-filter: blur(8px);
 }
 
-/* Brand */
-.navbar-brand a {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #FFDEDE;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-/* Navbar Links (Desktop) */
-.navbar-links {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-}
-
-.navbar-links li {
-  margin: 0;
-}
 
 .navbar-links a {
   text-decoration: none;
-  color: #FFDEDE;
+  color: #FFDEDE; /* light pink text */
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 600;
@@ -48,76 +27,12 @@ body{
   transition: color 0.3s ease;
 }
 
-/* Hover & Glow */
 .navbar-links a:hover {
-  color: #CF0F47;
+  color: #F88379; /* softer coral glow */
 }
 
 .navbar-links a::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: -5px;
-  width: 0%;
-  height: 2px;
-  background-color: #CF0F47;
-  transition: width 0.3s ease, left 0.3s ease;
-}
-
-.navbar-links a:hover::after {
-  width: 100%;
-  left: 0;
-}
-
-.navbar-brand a {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #397a95;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.navbar-links {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-}
-
-.navbar-links li {
-  margin: 0;
-}
-
-.navbar-links a {
-  text-decoration: none;
-  color: #397a95;
-  font-size: 1rem;
-  text-transform: uppercase;
-  font-weight: 600;
-  position: relative;
-  padding: 0.5rem;
-  transition: color 0.3s ease;
-}
-
-/* Glow effect for links */
-.navbar-links a:hover {
-  color: #CF0F47;
-}
-
-.navbar-links a::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: -5px;
-  width: 0%;
-  height: 2px;
-  background-color: #CF0F47;
-  transition: width 0.3s ease, left 0.3s ease;
-}
-
-.navbar-links a:hover::after {
-  width: 100%;
-  left: 0;
+  background-color: #F88379; /* match hover */
 }
 
 .hero {
