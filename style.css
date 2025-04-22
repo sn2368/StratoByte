@@ -248,6 +248,17 @@ background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   position: relative;
 }
 
+.solution-heading {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease-out;
+}
+
+.solution-heading.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .solution-heading h2 {
   font-size: 3rem;
   margin-bottom: 10px;
@@ -279,7 +290,7 @@ background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   align-items: center;
   box-shadow: 0 0 30px rgba(207, 15, 71, 0.4);
   backdrop-filter: blur(8px);
-  animation: floatUp 1s ease forwards;
+  animation: none;
   opacity: 0;
   transform: translateY(50px);
 }
@@ -294,6 +305,7 @@ background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   font-size: 1rem;
   color: #ddd;
 }
+
 @keyframes floatUp {
   to {
     transform: translateY(0);
