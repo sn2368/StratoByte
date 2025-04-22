@@ -1,36 +1,33 @@
-/problem section/
+// Problem Section Observer (for .hidden elements)
 const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('show');
-      } else {
-        entry.target.classList.remove('show'); 
-      }
-    });
-  }, {
-    threshold: 0.3 
-  });
-
-  const hiddenElements = document.querySelectorAll('.hidden');
-  hiddenElements.forEach(el => observer.observe(el));
-
-const pods = document.querySelectorAll('.pod');
-
-function revealPods() {
-  pods.forEach(pod => {
-    const rect = pod.getBoundingClientRect();
-    if (rect.top < window.innerHeight - 100) {
-      pod.classList.add('visible');
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
     } else {
-      pod.classList.remove('visible'); // to make it repeat
+      entry.target.classList.remove('show'); // allows repeat on scroll
     }
   });
-}
+}, {
+  threshold: 0.3
+});
 
-window.addEventListener('scroll', revealPods);
+document.querySelectorAll('.hidden').forEach(el => observer.observe(el));
 
+// Solution Section Observer (for .solution-heading and .pod)
+const solutionObserver = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target); // removes observer after it's visible
+    }
+  });
+}, {
+  threshold: 0.3
+});
 
+document.querySelectorAll('.solution-heading, .pod').forEach(el => solutionObserver.observe(el));
 
-document.getElementById("navbar-toggle").addEventListener("click", function () {
+// Navbar Toggle for Hamburger Menu
+document.getElementById("navbar-toggle")?.addEventListener("click", function () {
   document.getElementById("navbar-links").classList.toggle("show");
 });
