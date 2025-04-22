@@ -2,23 +2,12 @@ body{
   background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   overflow-x:hidden;
 }
-nav {
-  position: sticky;
-  top: 0;
-  background-color: #000; /* or your gradient */
-  z-index: 1000;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  
-  background-color: #000;
+  align-items: center;  
+  background-color: transparent;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -28,7 +17,7 @@ nav {
 .navbar-brand a {
   font-size: 2rem;
   font-weight: bold;
-  color: #FFDEDE;
+  color: #397a95;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -46,7 +35,7 @@ nav {
 
 .navbar-links a {
   text-decoration: none;
-  color: #FFDEDE;
+  color: #397a95;
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 600;
@@ -195,7 +184,7 @@ background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
 }
 #data-dilemma {
   padding: 100px 20px;
-  background: linear-gradient(to bottom, #111111, #000000); /* dark theme gradient */
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   color: white;
   text-align: center;
 }
