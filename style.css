@@ -321,7 +321,150 @@ background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
     transform: translateY(-10px);
   }
 }
-
 .pod.visible {
   animation: floatUp 1s ease forwards, gentleFloat 4s ease-in-out infinite;
+}
+/* How It Works */
+.how-it-works {
+  background: #121212;
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.how-it-works h2 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  color: #FF3E6C;
+}
+
+.steps-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.step {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #FF3E6C;
+  border-radius: 16px;
+  padding: 30px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(255, 62, 108, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-10px);
+}
+
+.step h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #FFDEDE;
+}
+
+.step p {
+  color: #ccc;
+}
+
+/* Why Stratobyte */
+.why-stratobyte {
+  background: linear-gradient(to right, #1f1f1f, #2b2b2b);
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.why-stratobyte h2 {
+  font-size: 3rem;
+  color: #FF3E6C;
+  margin-bottom: 30px;
+}
+
+.why-points {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.why-point {
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 4px solid #FF3E6C;
+  padding: 25px;
+  width: 300px;
+  text-align: left;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 62, 108, 0.2);
+}
+
+.why-point h3 {
+  color: #FFDEDE;
+  margin-bottom: 10px;
+}
+
+/* Impact */
+.impact {
+  background: #0f0f0f;
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.impact h2 {
+  font-size: 3rem;
+  color: #FF3E6C;
+  margin-bottom: 30px;
+}
+
+.impact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.impact-item {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #FF3E6C;
+  width: 100%;
+  box-shadow: 0 0 15px rgba(255, 62, 108, 0.2);
+}
+
+/* Our Vision */
+.vision {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.vision h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #FF3E6C;
+}
+
+.vision p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+/* Footer */
+footer {
+  background: #0f0f0f;
+  color: #999;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 0.9rem;
+  border-top: 1px solid #333;
 }
