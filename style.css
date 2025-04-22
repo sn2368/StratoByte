@@ -2,39 +2,6 @@ body{
   background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   overflow-x:hidden;
 }
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background: linear-gradient(to right, #1e3c72, #2a5298); /* updated gradient */
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  backdrop-filter: blur(8px);
-}
-
-
-.navbar-links a {
-  text-decoration: none;
-  color: #FFDEDE; /* light pink text */
-  font-size: 1rem;
-  text-transform: uppercase;
-  font-weight: 600;
-  position: relative;
-  padding: 0.5rem;
-  transition: color 0.3s ease;
-}
-
-.navbar-links a:hover {
-  color: #F88379; /* softer coral glow */
-}
-
-.navbar-links a::after {
-  background-color: #F88379; /* match hover */
-}
-
 .hero {
 background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   color: #fff;
