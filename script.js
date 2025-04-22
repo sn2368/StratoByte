@@ -1,24 +1,26 @@
-// Problem Section Observer (for .hidden elements)
+// /problem section/
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('show');
     } else {
-      entry.target.classList.remove('show'); // allows repeat on scroll
+      entry.target.classList.remove('show'); 
     }
   });
 }, {
-  threshold: 0.3
+  threshold: 0.3 
 });
 
-document.querySelectorAll('.hidden').forEach(el => observer.observe(el));
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach(el => observer.observe(el));
 
-// Solution Section Observer (for .solution-heading and .pod)
-const solutionObserver = new IntersectionObserver((entries, observer) => {
+// 🔄 Updated Solution Animation
+const solutionObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('visible');
-      observer.unobserve(entry.target); // removes observer after it's visible
+    } else {
+      entry.target.classList.remove('visible');
     }
   });
 }, {
@@ -27,7 +29,7 @@ const solutionObserver = new IntersectionObserver((entries, observer) => {
 
 document.querySelectorAll('.solution-heading, .pod').forEach(el => solutionObserver.observe(el));
 
-// Navbar Toggle for Hamburger Menu
-document.getElementById("navbar-toggle")?.addEventListener("click", function () {
+// ✅ Navbar toggle
+document.getElementById("navbar-toggle").addEventListener("click", function () {
   document.getElementById("navbar-links").classList.toggle("show");
 });
