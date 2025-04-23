@@ -29,15 +29,32 @@ const solutionObserver = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.solution-heading, .pod').forEach(el => solutionObserver.observe(el));
 
-// ✅ Navbar toggle
-document.getElementById("navbar-toggle").addEventListener("click", function () {
-  document.getElementById("navbar-links").classList.toggle("show");
-});
+ function setActiveLink() {
+    const links = document.querySelectorAll('.nav-link');
+    const sections = document.querySelectorAll('section');
+    
+    let currentSection = '';
+    
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.offsetHeight;
+      const scrollPosition = window.scrollY;
 
-document.querySelectorAll(".faq-question").forEach((question) => {
-    question.addEventListener("click", () => {
-      question.classList.toggle("active");
-      const answer = question.nextElementSibling;
-      answer.classList.toggle("open");
+      if (scrollPosition >= sectionTop - 50 && scrollPosition < sectionTop + sectionHeight) {
+        currentSection = section.getAttribute('id');
+      }
     });
-  });
+    
+    links.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href').includes(currentSection)) {
+        link.classList.add('active');
+      }
+    });
+  }
+
+  // Run the function on scroll
+  window.addEventListener('scroll', setActiveLink);
+  
+  // Run the function on load in case the page is reloaded
+  window.addEventListener('load', setActiveLink);
