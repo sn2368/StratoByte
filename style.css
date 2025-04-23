@@ -54,7 +54,7 @@ html {
 .navbar .nav-link.active {
   color: #ffd700;
   border-bottom: 2px solid #213448;
-
+}
 .hero-content{
   font-family: monospace;
 }
