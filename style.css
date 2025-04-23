@@ -438,7 +438,7 @@ background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
 .team h2 {
   font-size: 3rem;
   margin-bottom: 20px;
-  color: #FF3E6C;
+  color: white;
 }
 
 .team p {
@@ -447,3 +447,52 @@ background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   font-size: 1.2rem;
   color: #ccc;
 }
+
+.faq-section {
+    max-width: 800px;
+    margin: 3rem auto;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .faq-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #2f80ed;
+  }
+
+  .faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 0;
+  }
+
+  .faq-question {
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    padding-right: 30px;
+  }
+
+  .faq-question::after {
+    content: "+";
+    position: absolute;
+    right: 0;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+
+  .faq-question.active::after {
+    transform: rotate(45deg);
+  }
+
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    padding-top: 0;
+  }
+
+  .faq-answer.open {
+    max-height: 400px;
+    padding-top: 0.5rem;
+  }
