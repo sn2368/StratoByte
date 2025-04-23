@@ -49,8 +49,11 @@ html {
 }
 
 .navbar-links a:hover {
-  color: #00ffc3;
+  color: #213448;
 }
+.navbar .nav-link.active {
+  color: #ffd700;
+  border-bottom: 2px solid #213448;
 
 .hero-content{
   font-family: monospace;
@@ -448,51 +451,27 @@ background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   color: #ccc;
 }
 
-.faq-section {
-    max-width: 800px;
-    margin: 3rem auto;
+
+  .footer {
+    background-color: #2f80ed;
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
     font-family: 'Segoe UI', sans-serif;
   }
 
-  .faq-title {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    text-align: center;
-    color: #2f80ed;
+  .footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: 500;
   }
 
-  .faq-item {
-    border-bottom: 1px solid #ddd;
-    padding: 1rem 0;
+  .footer a:hover {
+    color: #ffd700;
   }
 
-  .faq-question {
-    font-weight: 600;
-    cursor: pointer;
-    position: relative;
-    padding-right: 30px;
-  }
-
-  .faq-question::after {
-    content: "+";
-    position: absolute;
-    right: 0;
-    font-size: 1.5rem;
-    transition: transform 0.3s ease;
-  }
-
-  .faq-question.active::after {
-    transform: rotate(45deg);
-  }
-
-  .faq-answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease;
-    padding-top: 0;
-  }
-
-  .faq-answer.open {
-    max-height: 400px;
-    padding-top: 0.5rem;
+  .footer p {
+    margin-top: 1rem;
+    font-size: 0.9rem;
   }
