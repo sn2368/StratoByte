@@ -1,6 +1,7 @@
 body{
   background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   overflow-x:hidden;
+  font-family: monospace;
 }
 html {
   scroll-behavior: smooth;
@@ -49,37 +50,6 @@ html {
   color: #00ffc3;
 }
 
-/* Hamburger Icon */
-.navbar-toggle {
-  display: none;
-  font-size: 2rem;
-  color: #ffffff;
-  cursor: pointer;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .navbar-links {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    background-color: #111;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    padding: 20px 0;
-    gap: 20px;
-  }
-
-  .navbar-links.show {
-    display: flex;
-  }
-
-  .navbar-toggle {
-    display: block;
-  }
-}
 .hero-content{
   font-family: monospace;
 }
@@ -212,7 +182,7 @@ background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   border-radius: 20px;
   padding: 30px 20px;
   width: 280px;
-  box-shadow: 0 0 10px rgba(207, 15, 71, 0.3);
+  box-shadow: 0 0 10px rgb(27 15 207 / 87%);
   transition: transform 0.3s ease;
   backdrop-filter: blur(17px) saturate(200%);
   -webkit-backdrop-filter: blur(17px) saturate(200%);
