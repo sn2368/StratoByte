@@ -33,3 +33,11 @@ document.querySelectorAll('.solution-heading, .pod').forEach(el => solutionObser
 document.getElementById("navbar-toggle").addEventListener("click", function () {
   document.getElementById("navbar-links").classList.toggle("show");
 });
+
+document.querySelectorAll(".faq-question").forEach((question) => {
+    question.addEventListener("click", () => {
+      question.classList.toggle("active");
+      const answer = question.nextElementSibling;
+      answer.classList.toggle("open");
+    });
+  });
