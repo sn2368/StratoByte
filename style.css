@@ -5,6 +5,7 @@ body{
 html {
   scroll-behavior: smooth;
 }
+
 /* Navbar Container */
 .navbar {
   display: flex;
@@ -79,6 +80,9 @@ html {
     display: block;
   }
 }
+.hero-content{
+  font-family: monospace;
+}
 .hero {
 background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   color: #fff;
@@ -91,10 +95,10 @@ background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
 }
 
 .hero h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: bold;
   margin-bottom: 1rem;
-  font-size: clamp(2.5rem, 6vw, 4rem);
+  text-shadow: 0 0 5px #3e68ff, 0 0 10px #3e68ff, 0 0 20px #3e68ff;
 }
 
 .hero p {
