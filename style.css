@@ -300,20 +300,21 @@ background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
 
 /* TECH SECTION */
 .tech {
-  background: #121212;
   color: #fff;
   padding: 100px 20px;
   text-align: center;
+  backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgb(144 158 163 / 52%);
+  border-radius: 12px;
+  border: 1px solid rgb(157 164 175 / 30%);
 }
 
 .tech-heading h2 {
   font-size: 3rem;
   margin-bottom: 30px;
-  color: #FF3E6C;
 }
 
 .tech-heading p {
-  color: #ccc;
   font-size: 1.2rem;
   max-width: 700px;
   margin: 0 auto 50px auto;
