@@ -10,6 +10,7 @@ html {
 /* Navbar Container */
 .navbar {
   display: flex;
+  flex: auto;
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
@@ -33,8 +34,9 @@ html {
 /* Links */
 .navbar-links {
   display: flex;
+  flex: auto;
   list-style: none;
-  gap: 30px;
+  gap: 50px;
   transition: all 0.3s ease;
 }
 
@@ -352,48 +354,68 @@ background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   color: #ccc;
 }
 
-/* COMPARE SECTION */
-.compare {
-  background: linear-gradient(to right, #1f1f1f, #2b2b2b);
-  color: #fff;
-  padding: 100px 20px;
-  text-align: center;
-}
+ .comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
 
-.compare h2 {
-  font-size: 3rem;
-  color: #FF3E6C;
-  margin-bottom: 40px;
-}
+  .comparison-table th,
+  .comparison-table td {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: left;
+  }
 
-.compare-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
-}
+  .comparison-table th {
+    background-color: #2f80ed;
+    color: white;
+  }
 
-.compare-box {
-  background: rgba(255, 255, 255, 0.05);
-  border-left: 4px solid #FF3E6C;
-  padding: 25px;
-  width: 300px;
-  text-align: left;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(255, 62, 108, 0.2);
-}
+  .comparison-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
 
-.compare-box h3 {
-  color: #FFDEDE;
-  margin-bottom: 10px;
-}
+  .comparison-table td:first-child {
+    font-weight: bold;
+    background-color: #f1f4f8;
+  }
 
-.compare-box ul {
-  padding-left: 0;
-  list-style: none;
-  color: #ccc;
-}
+  @media screen and (max-width: 768px) {
+    .comparison-table thead {
+      display: none;
+    }
 
+    .comparison-table, 
+    .comparison-table tbody, 
+    .comparison-table tr, 
+    .comparison-table td {
+      display: block;
+      width: 100%;
+    }
+
+    .comparison-table tr {
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #eee;
+    }
+
+    .comparison-table td {
+      text-align: right;
+      padding-left: 50%;
+      position: relative;
+    }
+
+    .comparison-table td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 1rem;
+      width: 45%;
+      text-align: left;
+      font-weight: bold;
+    }
+  }
 /* TEAM SECTION */
 .team {
   background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
