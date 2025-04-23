@@ -252,7 +252,7 @@ background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
 
 .pod {
   background: rgba(255, 255, 255, 0.05);
-  border: 2px solid #CF0F47;
+  border: 2px solid #606bbd;
   border-radius: 50%;
   width: 250px;
   height: 250px;
@@ -261,7 +261,7 @@ background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 30px rgba(207, 15, 71, 0.4);
+  box-shadow: 0 0 30px rgb(149 159 207 / 40%);;
   backdrop-filter: blur(8px);
   animation: none;
   opacity: 0;
@@ -271,7 +271,7 @@ background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
 .pod h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color: #FFDEDE;
+  color: whitesmoke;
 }
 
 .pod p {
