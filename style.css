@@ -1,5 +1,5 @@
 body{
-  background: linear-gradient(to bottom right, #d0f0fd, #e6f7ff);
+  background: background: linear-gradient(to bottom right, #93b8c9, #a2b8c3);
   overflow-x:hidden;
   font-family: monospace;
 }
@@ -59,7 +59,7 @@ html {
   font-family: monospace;
 }
 .hero {
-background: linear-gradient(to bottom right, #d0f0fd, #e6f7ff);
+background: linear-gradient(to bottom right, #93b8c9, #a2b8c3);;
   color: #fff;
   height: 100vh;
   display: flex;
