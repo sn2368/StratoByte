@@ -1,5 +1,5 @@
 body{
-  background: linear-gradient(to bottom right, #93b8c9, #a2b8c3)
+  background: linear-gradient(to bottom right, #93b8c9, #a2b8c3);
   overflow-x:hidden;
   font-family: monospace;
 }
