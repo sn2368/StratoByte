@@ -1,5 +1,5 @@
 body{
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  background: linear-gradient(to bottom right, #d0f0fd, #e6f7ff);
   overflow-x:hidden;
   font-family: monospace;
 }
@@ -59,7 +59,7 @@ html {
   font-family: monospace;
 }
 .hero {
-background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+background: linear-gradient(to bottom right, #d0f0fd, #e6f7ff);
   color: #fff;
   height: 100vh;
   display: flex;
@@ -152,7 +152,7 @@ background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
     transform: translateX(-100vw); /* Move all the way to the left */
   }
 }
-#data-dilemma {
+#problem{
   padding: 100px 20px;
   background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   color: white;
