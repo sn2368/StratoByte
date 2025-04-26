@@ -150,7 +150,7 @@ background: linear-gradient(to bottom right, #93b8c9, #a2b8c3);;
 #problem{
   padding: 100px 20px;
   background: linear-gradient(to bottom right, #93b8c9, #a2b8c3);
-  color: white;
+  color: #3D365C;
   text-align: center;
   border: 2px solid;
 }
@@ -164,7 +164,7 @@ background: linear-gradient(to bottom right, #93b8c9, #a2b8c3);;
 
 .section-subtitle {
   font-size: 1.1rem;
-  color: #cccccc;
+  color: #213448;
   margin-bottom: 50px;
   max-width: 600px;
   margin-left: auto;
@@ -216,7 +216,7 @@ background: linear-gradient(to bottom right, #93b8c9, #a2b8c3);;
 
 .solution {
   background: linear-gradient(to bottom right, #93b8c9, #a2b8c3);
-  color: #fff;
+  color: #3D365C;
   padding: 100px 20px;
   text-align: center;
   position: relative;
@@ -240,7 +240,7 @@ background: linear-gradient(to bottom right, #93b8c9, #a2b8c3);;
 
 .solution-heading p {
   font-size: 1.2rem;
-  color: white;
+  color: #213448;
 }
 
 .pods-container {
@@ -272,12 +272,12 @@ background: linear-gradient(to bottom right, #93b8c9, #a2b8c3);;
 .pod h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color: white;
+  color: #3D365C;
 }
 
 .pod p {
   font-size: 1rem;
-  color: white;
+  color: #213448;
 }
 
 @keyframes floatUp {
@@ -301,7 +301,7 @@ background: linear-gradient(to bottom right, #93b8c9, #a2b8c3);;
 
 /* TECH SECTION */
 .tech {
-  color: #fff;
+  color: #3D365C;
   padding: 100px 20px;
   text-align: center;
   backdrop-filter: blur(16px) saturate(180%);
@@ -346,35 +346,12 @@ background: linear-gradient(to bottom right, #93b8c9, #a2b8c3);;
 .point h3 {
   font-size: 1.5rem;
   margin-bottom: 15px;
-  color: #FFDEDE;
+  color: #3D365C;
 }
 
 .point p {
-  color: #ccc;
+  color: #213448;
 }
-
-/* TEAM SECTION */
-.team {
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-  color: #fff;
-  padding: 100px 20px;
-  text-align: center;
-}
-
-.team h2 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-  color: white;
-}
-
-.team p {
-  max-width: 800px;
-  margin: 0 auto;
-  font-size: 1.2rem;
-  color: #ccc;
-}
-
-
   .footer {
     background-color: linear-gradient(to bottom right, #93b8c9, #a2b8c3);
     color: white;
